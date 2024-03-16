@@ -1,0 +1,30 @@
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+apple + apple
+
+const formatDate = date => new Date(date).toLocaleDateString();
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+kiwi
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+grape
+
+const removeDuplicates = array => Array.from(new Set(array));
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+banana
+
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+class MyClass { constructor() { this.property = getRandomString(); } }
+75 * false
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+grape
+
+let array = getRandomArray(); array.forEach(item => console.log(item));
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
